@@ -13,8 +13,9 @@ import "@aws-amplify/ui-react/styles.css";
 import { generateClient } from "aws-amplify/data";
 import outputs from "../amplify_outputs.json";
 /**
- * @type {import('aws-amplify/data').Client<import('../amplify/data/
-resource').Schema>}
+ * @type {import('aws-amplify/data').Client<
+ * import('../amplify/data/resource').Schema
+ * >}
  */
 Amplify.configure(outputs);
 const client = generateClient({
@@ -61,7 +62,7 @@ export default function App() {
             className="box"
           >
             <View>
-              <Heading level="3">{userprofile.email}</Heading>
+              <Heading level={3}>{userprofile.email}</Heading>
             </View>
           </Flex>
         ))}
